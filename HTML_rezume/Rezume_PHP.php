@@ -12,6 +12,16 @@ $birthday = '25.06.1986';
 $mobile = '097-172-53-85';
 $email = 'DYuriy86@gmail.com';
 $work_style = 'повна зайнятість.';
+$work_place = array ("ТОВ «БМС Консалтинг»", "ЗАТ «Український процесінговий центр» (UPC)", "Пансионат", "Завод Звезда");
+
+	for ($i=count($work_place)-1; $i >= 0 ; $i--) { 
+		$a=0;
+		$back_array [$a] = $work_place [$i];
+		$a++;
+		print_r($back_array);
+	
+	}
+	
 ?>
 	<div id="rezume">
 		<header>
@@ -120,7 +130,7 @@ UPC;
 		echo $html;
 		?>
 		<br>
-		<iframe src="skills.html"></iframe>
+		<iframe src="skills.php"></iframe>
 		<footer>
 			&copy; Автор резюме <?= $name ?>
 		</footer>
